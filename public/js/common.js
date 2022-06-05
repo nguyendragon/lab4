@@ -1,5 +1,5 @@
 export function Render(classElement, type) {
-    if (classElement) {
+    if (classElement && type) {
         document.querySelector(classElement).innerHTML = type;
     }
 }

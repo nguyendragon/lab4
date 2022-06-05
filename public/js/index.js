@@ -1,6 +1,9 @@
 import { Render } from "./common";
 import { listProduct, listMenu, categories } from "./data";
 
+// var url = window.location.pathname;
+// var filename = url.substring(url.lastIndexOf('/') + 1); // lấy ra tên file
+
 function showProduct(listProduct) {
     if (!Array.isArray(listProduct) || listProduct.length == 0) return;
 
@@ -38,6 +41,5 @@ function showCategory(categories) {
     }
     return result;
 }
-
 Render('.product-list_show', showProduct(listProduct));
 Render('.list-category', showCategory(categories));

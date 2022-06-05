@@ -47,3 +47,10 @@ export const productPage = [
     { id: 2, title: 'Fresh Lime Roasted Salmon', price: 30, image: "/images/Mask Group (4).png", href: '#' },
     { id: 3, title: 'Fruity Pancake with Orange & Blueberry', image: "/images/Mask Group (5).png", price: 30, href: '#' }
 ];
+
+// Sản phẩm trang detail
+export const detailPage = [
+    { id: 1, title: 'Big and Juicy Wagyu Beef Cheeseburger', price: 30, image: "/images/Mask Group (0).png", href: '#' },
+    { id: 2, title: 'Fruity Pancake with Orange & Blueberry', price: 30, image: "/images/Mask Group (1).png", href: '#' },
+    { id: 3, title: 'Fresh Lime Roasted Salmon', price: 30, image: "/images/Mask Group (2).png", href: '#' }
+];
