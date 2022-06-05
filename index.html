@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="max-w-7xl m-auto">
+        <header class="mb-14">
+            <nav class="flex justify-between items-center flex-col lg:flex-row">
+                <div class="logo font-bold text-black text-2xl flex justify-between w-full px-4 py-2 sm:w-auto">
+                    <div>Fudo<span class="text-red-500">.</span></div>
+                    <svg viewBox="0 0 100 80" width="32" height="32" class="menu block sm:hidden cursor-pointer">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>
+                </div>
+                <ul class="nav-list hidden w-full bg-[#2c3e50] sm:bg-white sm:w-auto sm:flex items-center sm:my-4">
+                    <!--  List Menu -->
+                </ul>
+                <form action="" class="form-btn hidden sm:flex w-full bg-[#2c3e50] sm:bg-white sm:w-auto flex justify-center items-center flex-col sm:flex-row">
+                    <img src="images/Cart.svg" alt="" class="top-0 right-0 py-2 mr-[72px] sm:mr-0">
+                    <button class="w-[95%] sm:w-auto text-red-500 py-2 px-4 m-2 ml-5 border-2 border-red-500 rounded hover:bg-[#F54748] hover:bg-red-500 hover:text-white sm:hover:text-white sign-in">Sign In</button>
+                    <button class="w-[95%] sm:w-auto bg-[#F54748] text-white py-2 px-4 m-2 ml-5 border-2 border-red-500 rounded hover:bg-transparent sm:hover:bg-white hover:text-red-500 sign-up">Sign Up</button>
+                </form>
+            </nav>
+        </header>
+        <section>
+            <div class="lg:grid grid-cols-2 gap 8">
+                <div class="banner-colum">
+                    <div class="text-center lg:text-left">
+                        <span class="lg:inline header-banner bg-[#FFEEEE] text-left text-red-500 font-bold p-3 px-6">Quality Food</span>
+                    </div>
+                    <div class="content-banner text-left mx-[8px] text-center lg:text-left lg:mx-0 mt-8">
+                        <h2 class="text-center lg:text-left text-[36px] font-bold lg:text-7xl lg:max-w-md my-8">Fastest <span class="text-red-500">Delivery</span> & Easy <span class="text-red-500">Pickup</span></h2>
+                        <p class="text-lg my-4 lg:my-0">Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
+                    </div>
+                    <form action="" class="hidden md:block py-8 relative text-center lg:text-left">
+                        <input class="min-w-[360px] rounded-l-lg p-2 py-4 border border-red-500" type="text" placeholder="Enter your delivery location">
+                        <button class="min-w-[120px] bg-[#F54748] absolute p-2 py-4 border border-red-500 rounded-r-lg text-white">Discover</button>
+                    </form>
+                </div>
+                <div class="banner-colum flex justify-center items-center">
+                    <img src="./images/Images.png" class="bg-cover w-[65%] bg-no-repeat bg-center" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="flex justify-around flex-wrap">
+            <div class="mx-[8px] lg:mx-0 product-heading text-center mt-28 max-w-[706px] m-auto">
+                <h2 class="font-bold text-5xl mb-8">Our Popular Dishes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+            </div>
+            <div class="product-list_show mx-[8px] grid sm:grid-cols-2 lg:grid-cols-3 gap-8 my-6">
+                <!-- List Product -->
+            </div>
+        </section>
+        <section>
+            <div class="mx-[8px] flex justify-between items-center mb-20">
+                <h2 class="font-bold text-[32px]">Categories</h2>
+                <span class="p-2 border rounded border-red-500 text-red-500 font-semibold">View All Categories</span>
+            </div>
+            <div class="list-category grid grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                <!-- Categories -->
+            </div>
+        </section>
+        <section>
+            <div class="title text-center py-16 mx-[8px] lg:mx-0">
+                <h3 class="font-bold text-5xl">Contact Us</h3>
+            </div>
+            <form action="" class="mx-[8px] lg:mx-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="contact-us-item">
+                        <label for="name" class="block uppercase mb-2 text-gray-400">Name</label>
+                        <input type="text" id="name" class="block p-3 border w-full focus:shadow-cyan-500/50 outline-0 shadow-md" placeholder="Name">
+                    </div>
+                    <div class="contact-us-item">
+                        <label for="" class="uppercase block mb-2 text-gray-400">Email Address</label>
+                        <input type="text" class="block p-3 border w-full focus:shadow-cyan-500/50 outline-0 shadow-md" placeholder="Email Address">
+                    </div>
+                    <div class="contact-us-item">
+                        <label for="" class="uppercase block mb-2 text-gray-400">Subject</label>
+                        <input type="text" class="block p-3 border w-full focus:shadow-cyan-500/50 outline-0 shadow-md" placeholder="Subject">
+                    </div>
+                    <div class="contact-us-item">
+                        <label for="" class="uppercase block mb-2 text-gray-400">ENquiry type</label>
+                        <select name="" id="" class="block p-3 border w-full focus:shadow-cyan-500/50 outline-0 shadow-md text-gray-400">
+                            <option value="" class="">Advertising</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="contact-us-item col-span-2 mt-4">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="border w-full resize-none p-4 focus:shadow-cyan-500/50 outline-0 shadow-md"></textarea>
+                </div>
+            </form>
+            <div class="text-center">
+                <button class="py-4 px-12 bg-black text-white rounded my-6">Submit</button>
+            </div>
+        </section>
+        <footer class="mx-[8px] border-t-2 flex justify-between mb-20 flex-col md:flex-row">
+            <div class="logo mt-4 font-bold text-2xl text-center">Fudo<span class="text-red-500">.</span></div>
+            <ul class="flex justify-center md:justify-between items-center mt-4">
+                <li class="cursor-pointer px-4 text-lg">Home</li>
+                <li class="cursor-pointer px-4 text-lg">Products</li>
+                <li class="cursor-pointer px-4 text-lg">About Us</li>
+                <li class="cursor-pointer px-4 text-lg">Contact Us</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
+    <script type="module" defer src="/public/js/index.js"></script>
+    <script type="module" defer src="/public/js/function.js"></script>
+    <script>
+        function redirectIndex(params) {
+            if (!params) return;
+            let url = params.attributes.href.nodeValue;
+            location.href = url;
+        }
+    </script>
+</body>
+
+</html>

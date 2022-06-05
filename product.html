@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="max-w-7xl m-auto">
+        <header class="mb-14">
+            <nav class="flex justify-between items-center flex-col lg:flex-row">
+                <div class="logo font-bold text-black text-2xl flex justify-between w-full px-4 py-2 sm:w-auto">
+                    <div>Fudo<span class="text-red-500">.</span></div>
+                    <svg viewBox="0 0 100 80" width="32" height="32" class="menu block sm:hidden cursor-pointer">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>
+                </div>
+                <ul class="nav-list hidden w-full bg-[#2c3e50] sm:bg-white sm:w-auto sm:flex items-center sm:my-4">
+                    <!--  List Menu -->
+                </ul>
+                <form action="" class="form-btn hidden sm:flex w-full bg-[#2c3e50] sm:bg-white sm:w-auto flex justify-center items-center flex-col sm:flex-row">
+                    <img src="images/Cart.svg" alt="" class="top-0 right-0 py-2 mr-[72px] sm:mr-0">
+                    <button class="w-[95%] sm:w-auto text-red-500 py-2 px-4 m-2 ml-5 border-2 border-red-500 rounded hover:bg-[#F54748] hover:bg-red-500 hover:text-white sm:hover:text-white sign-in">Sign In</button>
+                    <button class="w-[95%] sm:w-auto bg-[#F54748] text-white py-2 px-4 m-2 ml-5 border-2 border-red-500 rounded hover:bg-transparent sm:hover:bg-white hover:text-red-500 sign-up">Sign Up</button>
+                </form>
+            </nav>
+        </header>
+        <section>
+            <div class="banner">
+                <img class="w-auto object-cover" src="./images/Rectangle 1372.svg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="flex justify-center lg:grid grid-cols-5 mt-12">
+                <div class="hidden lg:block content-left gap-8 col-span-1">
+                    <ul class="list-menu_product ml-4 md:ml-0">
+                        <li class="py-2 font-bold text-[20px]"></li>
+                        <li class="py-2 font-bold text-[20px]"></li>
+                        <li class="py-2 font-bold text-[20px]"></li>
+                        <li class="py-2 font-bold text-[20px]"></li>
+                        <li class="py-2 font-bold text-[20px]"></li>
+                    </ul>
+                </div>
+                <div class="product-page content-right grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 col-span-4">
+                    <!--- List product --->
+                </div>
+            </div>
+        </section>
+        <footer class="mx-[8px] border-t-2 flex justify-between mb-20 flex-col md:flex-row">
+            <div class="logo mt-4 font-bold text-2xl text-center">Fudo<span class="text-red-500">.</span></div>
+            <ul class="flex justify-center md:justify-between items-center mt-4">
+                <li class="cursor-pointer px-4 text-lg">Home</li>
+                <li class="cursor-pointer px-4 text-lg">Products</li>
+                <li class="cursor-pointer px-4 text-lg">About Us</li>
+                <li class="cursor-pointer px-4 text-lg">Contact Us</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
+    <script type="module" defer src="/public/js/function.js"></script>
+    <script type="module" defer src="/public/js/product.js"></script>
+</body>
+
+</html>
